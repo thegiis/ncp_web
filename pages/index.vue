@@ -16,6 +16,11 @@ export default {
     LandingImage,
     SectionObjectives,
     SectionModules
+  },
+  head () {
+    return{
+      title: "Nature's Contribution to People"
+    }
   }
 }
 </script>

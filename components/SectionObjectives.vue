@@ -11,7 +11,7 @@
   width: 100%;
   padding: 2rem 2rem;
   min-height: 640px;
-  background-color: #10FDFF;
+  background-color: #49E1F0;
   color: white;
   margin: 0;
   display: flex;
