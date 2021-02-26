@@ -1,0 +1,23 @@
+html,
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "restoration";
+    src: url("@/assets/fonts/PS-Restoration-Rough.otf");
+}
+
+
+/* for poppins and avaeria */
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&family=Poppins&display=swap');
