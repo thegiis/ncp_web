@@ -12,14 +12,14 @@ import SectionObjectives from '@/components/SectionObjectives.vue'
 import SectionModules from '@/components/SectionModules.vue'
 
 export default {
-  components:{
+  components: {
     LandingImage,
     SectionObjectives,
     SectionModules
   },
-  head () {
-    return{
-      title: "Nature's Contribution to People"
+  head() {
+    return {
+      title: "Nature's Contributions to People"
     }
   }
 }
