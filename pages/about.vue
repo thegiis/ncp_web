@@ -1,14 +1,14 @@
 <template>
   <div class="container">
-      <h2>This is an about page</h2>
+    <h2>This is an about page in dev</h2>
   </div>
 </template>
 
 <script>
 export default {
-  head () {
-    return{
-      title: "About"
+  head() {
+    return {
+      title: 'About'
     }
   }
 }
@@ -23,5 +23,4 @@ export default {
   align-items: center;
   text-align: center;
 }
-
 </style>
