@@ -1,16 +1,22 @@
 <template>
   <div :class="$style.footer">
       <div :class="$style.socials">
-        <a href="https://www.facebook.com/sandeepsthapit" target="_blank">
+        <a href="https://www.facebook.com/theGIIS" target="_blank">
           <img src="@/assets/images/fb.svg" />
         </a>
-        <a href="mailto:sandeepsthapit@gmail.com" target="_top">
+        <a href="https://www.youtube.com/" target="_top">
+          <img src="@/assets/images/youtube.svg" />
+        </a>
+        <a href="https://www.instagram.com/" target="_top">
+          <img src="@/assets/images/insta.svg" />
+        </a>
+        <a href="mailto:info@thegiis.org" target="_top">
           <img src="@/assets/images/gmail.svg" />
         </a>
       </div>
       <div :class="$style.institution">
         <div :class="$style.institutionImg">
-          <img :class="$style.institutionLogo" src="@/assets/images/GIIS.svg" />
+          <img :class="$style.institutionLogo" src="@/assets/images/GIIS.png" />
           <!-- <p>Global Institute for Interdisciplinary Studies</p> -->
         </div>
           <div :class="$style.insitutionDetails">
