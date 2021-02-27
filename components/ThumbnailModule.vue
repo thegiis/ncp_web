@@ -44,6 +44,10 @@ export default {
         return this.$style.module
       }
     }
+  },
+  mounted(){
+    const tl = gsap.timeline();
+    tl.to(".", {duration: 10, x: 50, y: 0, opacity:0})
   }
 }
 </script>
