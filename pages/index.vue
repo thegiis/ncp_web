@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div>
     <LandingImage />
-    <SectionObjectives />
-    <SectionModules class='test'/>
+    <SectionObjectives/>
+    <SectionModules/>
   </div>
 </template>
 
@@ -23,19 +23,8 @@ export default {
       title: "Nature's Contributions to People"
     }
   },
-  mounted(){
-    this.startAnimation()
-  },
-  methods: {
-    startAnimation(){
-    }
-  }
 }
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-}
 </style>

@@ -1,12 +1,19 @@
 <template>
-    <div :class="$style.modulesSection">
-      <div :class="$style.modulesContainer">
-      <ThumbnailModule v-for="module in modules" :key="module.title" 
-      :filename="module.filename" 
-      :title="module.title" 
-      :text="module.text"
-      :isRight="module.isRight"
-      :alt="module.alt"/>
+  <div  class="hero is-fullheight" :class="$style.modulesSection">
+      <div
+        class="container is-max-desktop"
+        :class="$style.modulesContainer"
+        ref="modulesContainer"
+      >
+        <ThumbnailModule
+          v-for="module in modules"
+          :key="module.title"
+          :filename="module.filename"
+          :title="module.title"
+          :text="module.text"
+          :isRight="module.isRight"
+          :alt="module.alt"
+        />
       </div>
   </div>
 </template>
@@ -14,59 +21,91 @@
 <script>
 import ThumbnailModule from '@/components/ThumbnailModule.vue'
 
+const { gsap } = require('gsap/dist/gsap')
+const { ScrollTrigger } = require('gsap/dist/ScrollTrigger')
+
+gsap.registerPlugin(ScrollTrigger)
+
 export default {
-  name: 'ComingSoon',
   components: {
-    ThumbnailModule
+    ThumbnailModule,
   },
-  data () {
+  data() {
     return {
-      modules: [{
-        'title': 'Pollution',
-        'text': 'something on pollution',
-        'filename': 'pollution.jpg',
-        'alt': 'pollution',
-        "isRight": false,
-      },{
-        'title': 'Pollination',
-        'text': 'something on pollination',
-        'filename': 'pollination.jpg',
-        'alt': 'pollination',
-        "isRight": true,
-      },{
-        'title': 'Food',
-        'text': 'something on food',
-        'filename': 'food.png',
-        'alt': 'food',
-        "isRight": false,
-      },{
-        'title': 'Nature Beauty',
-        'text': 'something on Nature Beauty',
-        'filename': 'hiking.png',
-        'alt': 'nature beauty',
-        "isRight": true,
-      },{
-        'title': 'Human Animal Relation',
-        'text': 'something on Human Animal Relation',
-        'filename': 'hiking.png',
-        'alt': 'nature beauty',
-        "isRight": false,
-      }]
+      modules: [
+        {
+          title: 'Food',
+          text: 'something on food',
+          filename: 'food.png',
+          alt: 'food',
+          isRight: false,
+        },
+        {
+          title: 'Inspiration & Learning',
+          text: 'something on Inspiration & Learning',
+          filename: 'hiking.png',
+          alt: 'Inspiration & Learning',
+          isRight: true,
+        },
+        {
+          title: 'Pollination',
+          text: 'something on pollination',
+          filename: 'pollination.png',
+          alt: 'pollination',
+          isRight: false,
+        },
+        {
+          title: 'Regulation of Air Quality',
+          text: 'something on Regulation of Air Quality',
+          filename: 'pollution.jpg',
+          alt: 'pollution',
+          isRight: true,
+        },
+        {
+          title: 'Companionship',
+          text: 'something on Companionship',
+          filename: 'companion.jpg',
+          alt: 'companion',
+          isRight: false,
+        },
+      ],
     }
-  }
+  },
+
+  mounted() {
+    this.startAnimation()
+  },
+  methods: {
+    startAnimation() {
+      const moduleContainer = this.$refs.modulesContainer
+      const modules = moduleContainer.childNodes
+      console.log(modules)
+      console.log(gsap)
+      // const tl = gsap.timeline({
+      //   stagger: 0.2,
+      //   scrollTrigger: {
+      //     trigger: moduleContainer,
+      //     start: "top center",
+      //     scrub: true,
+      //     markers: true
+      //   }
+      // })
+      // tl.from(modules, {duration:1, autoAlpha: 0})
+    },
+  },
 }
 </script>
 
 <style module>
-.modulesSection{
-  width: 100%;
+.modulesSection {
   padding: 5rem 2rem;
-  background-color: #F39569;
+  background-color: #f39569;
   display: flex;
   justify-content: center;
 }
-.modulesContainer{
+.modulesContainer {
   max-width: 720px;
+  position: relative;
   width: 90%;
 }
 </style>

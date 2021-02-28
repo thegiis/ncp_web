@@ -16,21 +16,23 @@
       </div>
       <div :class="$style.institution">
         <div :class="$style.institutionImg">
-          <img :class="$style.institutionLogo" src="@/assets/images/GIIS.png" />
+          <img :class="$style.institutionLogo" src="@/assets/images/giis_transparent.png" />
           <!-- <p>Global Institute for Interdisciplinary Studies</p> -->
         </div>
           <div :class="$style.insitutionDetails">
-            <p>Chakupat, Lalitpur</p>
-            <p>Nepal</p>
-            <p>Phone Number</p>
+            <p>P. Box 3084, Kathmandu, Nepal</p>
+            <p>info@thegiis.org</p>
+            <p>Phone: +977-1-4880927</p>
+            <p>Cell Phone: 9840728150</p>
           </div>
       </div>
-      <div :class="$style.donors">
+      <footer :class="$style.donors" class="footer">
         <p>Supported By</p>
         <div :class="$style.donorsContainer">
-          <img src="@/assets/images/IPBES.svg" />
+          <img src="@/assets/images/ipbes.svg" />
+          <img src="@/assets/images/norway_environment.svg" />
         </div>
-      </div>
+      </footer>
   </div>
 </template>
 
@@ -45,7 +47,7 @@ export default {
   position: relative;
   width: 100%;
   padding-top: 6rem;
-  background-color: #496363;
+  background-color: #00C3AB;
 }
 .socials {
   position: absolute;
@@ -108,10 +110,13 @@ export default {
   font-size: 1.3rem;
 }
 .institutionLogo{
-  height: 120px;
+  height: 100px;
 }
 .insitutionDetails{
-  color: white;
+  color: #244590;
+  border-left: 1px solid #244590;
+  margin-left: 1rem;
+  padding-left: 1rem;
   text-align: left;
   font-size: 1.2rem;
   letter-spacing: 2px;
@@ -122,7 +127,6 @@ export default {
   position: relative;
   width: 100%;
   background-color: #333333;
-  padding: 3rem 0rem;
 }
 .donors>p{
   text-align: center;

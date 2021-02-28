@@ -14,17 +14,10 @@ export default {
             },
             { hid: 'description', name: 'description', content: '' }
         ],
-<<<<<<< HEAD
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
-=======
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+            { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" }
         ],
-        script: [
-            { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" },
-            { src: "https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js" }
-        ]
->>>>>>> parent of b575155 (Update nuxt.config.js)
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css

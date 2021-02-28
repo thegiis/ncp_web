@@ -5,7 +5,7 @@
     </div>
     <div :class="$style.description">
       <h2>{{title}}</h2>
-      <p>{{text}}</p>
+      <!-- <p>{{text}}</p> -->
     </div>
   </div>
 </template>
@@ -55,7 +55,7 @@ export default {
   position: relative;
   width: 100%;
   padding: 0;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
