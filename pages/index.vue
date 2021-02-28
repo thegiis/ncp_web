@@ -28,16 +28,6 @@ export default {
   },
   methods: {
     startAnimation(){
-      const tween = TweenMax.to('.test', 1, {backgroundColor:"red"})
-
-      const scene = this.$scrollmagic.scene({
-        triggerElement: ".test",
-        triggerHook: 0.5,
-        duration: 500
-      })
-      .setTween(tween);
-      
-      this.$scrollmagic.addScene(scene)
     }
   }
 }
