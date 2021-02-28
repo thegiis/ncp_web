@@ -7,7 +7,7 @@
       <br />
       <div :class="$style.aboutDescription">
         <p>
-          his project aims to produce multimedia digital learning materials on
+          This project aims to produce multimedia digital learning materials on
           ‘Nature and Nature’s Contribution to People (NCP)’ for the young
           audience with an age range from 10-15 years. The learning materials
           will include learning videos, interactive lessons and activities.
@@ -22,14 +22,21 @@
         <br />
         <p>
           The learning materials will be based on the assessments produced by
-          the Intergovernmental Science-Policy Platform on Biodiversity and
-          Ecosystem Service (IPBES). This project is supported by Norwegian
-          Environmental Agency and implemented by the Global Institute for
-          Interdisciplinary Studies (GIIS), Nepal. We hope our learning
-          materials for younger audience not only informs them about the
-          activities of IPBES but also makes them aware to change extractive
-          behavior to Nature. Ultimately, it will empower them to live in
-          harmony with Nature.
+          the
+          <a target=”_blank” href="https://ipbes.net/"
+            >Intergovernmental Science-Policy Platform on Biodiversity and
+            Ecosystem Service (IPBES)</a
+          >. This project is supported by
+          <a target=”_blank” href="https://www.environmentagency.no/"
+            >Norwegian Environmental Agency (NEA)</a
+          >
+          and implemented by the
+          <a target=”_blank” href="http://www.thegiis.org"
+            >Global Institute for Interdisciplinary Studies (GIIS)</a
+          >, Nepal. We hope our learning materials for younger audience not only
+          informs them about the activities of IPBES but also makes them aware
+          to change extractive behavior to Nature. Ultimately, it will empower
+          them to live in harmony with Nature.
         </p>
       </div>
     </section>

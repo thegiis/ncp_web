@@ -16,7 +16,8 @@
       </div>
       <div :class="$style.institution">
         <div :class="$style.institutionImg">
-          <img :class="$style.institutionLogo" src="@/assets/images/giis_transparent.png" />
+          
+          <a target=”_blank” href="http://www.thegiis.org"><img :class="$style.institutionLogo" src="@/assets/images/giis_transparent.png" /></a>
           <!-- <p>Global Institute for Interdisciplinary Studies</p> -->
         </div>
           <div :class="$style.insitutionDetails">
@@ -29,8 +30,8 @@
       <footer :class="$style.donors" class="footer">
         <p>Supported By</p>
         <div :class="$style.donorsContainer">
-          <img src="@/assets/images/ipbes.svg" />
-          <img src="@/assets/images/norway_environment.svg" />
+          <a target=”_blank” href="https://ipbes.net/"><img src="@/assets/images/ipbes.svg" /></a>
+          <a target=”_blank” href="https://www.environmentagency.no/"><img src="@/assets/images/norway_environment.svg" /></a>
         </div>
       </footer>
   </div>

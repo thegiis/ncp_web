@@ -90,7 +90,7 @@ export default {
   display: flex;
   justify-content: center;
 }
-.teamSection>.container {
+.teamSection>div {
     width: 100%;
 }
 .ourTeam{
