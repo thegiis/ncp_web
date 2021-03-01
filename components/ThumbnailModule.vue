@@ -1,4 +1,5 @@
 <template>
+  <div :class="getClass(isRight)" :data-right="isRight">
     <div :class="$style.thumbnail">
       <img :alt=alt :src="require(`@/assets/images/thumbnails/${filename}`)">
     </div>
@@ -66,6 +67,7 @@ export default {
   overflow: hidden;
   flex: none;
   margin-right: 1.5rem;
+  z-index: 5;
 }
 .right>.thumbnail{
   order: 10;
