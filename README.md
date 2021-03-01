@@ -1,6 +1,7 @@
 # ncp_web
 
 ## Build Setup
+**Continuous deployment**
 
 ```bash
 # install dependencies
