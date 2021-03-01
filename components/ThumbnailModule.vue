@@ -95,7 +95,7 @@ export default {
 }
 .description>h2{
   font-family: 'Averia Libre', cursive;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 </style>
