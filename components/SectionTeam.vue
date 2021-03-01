@@ -32,7 +32,7 @@ export default {
         {
           name: 'Anbika Giri',
           filename: 'anbika.jpg',
-          role: 'Content',
+          role: 'Content Writer',
         },
         {
           name: 'Anushri Lama',
@@ -47,12 +47,12 @@ export default {
         {
           name: 'Dovan Rai',
           filename: 'dovan.jpg',
-          role: 'Project Manager',
+          role: 'Pedagogy Expert',
         },
         {
           name: 'Rushil Shakya',
           filename: 'rushil.jpg',
-          role: 'System Architect',
+          role: 'Project Manager',
         },
         {
           name: 'Sandeep Sthapit',
