@@ -1,36 +1,32 @@
 <template>
-  <div  class="hero is-fullheight" :class="$style.modulesSection">
-      <div
-        class="container is-max-desktop"
-        :class="$style.modulesContainer"
-        ref="modulesContainer"
-      >
-        <ThumbnailModule
-          v-for="module in modules"
-          :key="module.title"
-          :filename="module.filename"
-          :title="module.title"
-          :text="module.text"
-          :isRight="module.isRight"
-          :alt="module.alt"
-        />
-      </div>
+  <div class="hero is-fullheight" :class="$style.modulesSection">
+    <div
+      class="container is-max-desktop"
+      :class="$style.modulesContainer"
+      ref="modulesContainer"
+    >
+      <ThumbnailModule
+        v-for="module in modules"
+        :key="module.title"
+        :filename="module.filename"
+        :title="module.title"
+        :text="module.text"
+        :isRight="module.isRight"
+        :alt="module.alt"
+      />
+    </div>
   </div>
 </template>
 
 <script>
 import ThumbnailModule from '@/components/ThumbnailModule.vue'
 
-const { gsap } = require('gsap/dist/gsap')
-const { ScrollTrigger } = require('gsap/dist/ScrollTrigger')
-
-gsap.registerPlugin(ScrollTrigger)
-
 export default {
+  name: 'ComingSoon',
   components: {
-    ThumbnailModule,
+    ThumbnailModule
   },
-  data() {
+  data () {
     return {
       modules: [
         {
@@ -67,7 +63,7 @@ export default {
           filename: 'companion.jpg',
           alt: 'companion',
           isRight: false,
-        }
+        },
       ],
     }
   },
@@ -79,36 +75,53 @@ export default {
     startAnimation() {
       const moduleContainer = this.$refs.modulesContainer
       const modules = moduleContainer.childNodes
-      console.log(modules)
-      console.log(gsap)
-      // const tl = gsap.timeline({
-      //   stagger: 0.2,
-      //   scrollTrigger: {
-      //     trigger: moduleContainer,
-      //     start: "top center",
-      //     scrub: true,
-      //     markers: true
-      //   }
-      // })
-      // tl.from(modules, {duration:1, autoAlpha: 0})
+      const tl = gsap.timeline({
+        // stagger: 0.2,
+        scrollTrigger: {
+          trigger: moduleContainer,
+          start: '-30% center',
+          end: '65% center',
+          scrub: true,
+          // markers: true,
+        },
+      })
+      modules.forEach(function (module) {
+        console.log(module.childNodes)
+        if (module.dataset.right) {
+          gsap.set(module.childNodes[2], { opacity: 0, x: '120' })
+          tl.from(module.childNodes[0], {
+            xPercent: 50,
+            left: '-50%',
+          }).to(module.childNodes[2], {
+            opacity: 1,
+            x: '0',
+          })
+        } else {
+          gsap.set(module.childNodes[2], { opacity: 0, x: '-120' })
+          tl.from(module.childNodes[0], {
+            xPercent: -50,
+            left: '50%',
+          }).to(module.childNodes[2], {
+            opacity: 1,
+            x: '0',
+          })
+        }
+      })
     },
   },
 }
 </script>
 
 <style module>
-.modulesSection {
+.modulesSection{
+  width: 100%;
   padding: 5rem 2rem;
-  background-color: #f39569;
+  background-color: #F39569;
   display: flex;
   justify-content: center;
 }
-.modulesContainer {
+.modulesContainer{
   max-width: 720px;
-  position: relative;
   width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 </style>
