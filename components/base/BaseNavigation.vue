@@ -1,5 +1,5 @@
 <template>
-    <div :class="$style.titleBar">
+    <div :class="$style.titleBar" class="container is-widescreen">
         <div class="baseNavbarDiv" :class="$style.navDiv">
             <nuxt-link :to="{name: 'index'}">Home</nuxt-link>
             <nuxt-link :to="{name: 'about'}">About</nuxt-link>
@@ -10,7 +10,7 @@
 <style module>
 .titleBar{
     width: 100%;
-    padding: 1rem 2.5rem;
+    padding: 1rem 2rem;
     padding-top: 2rem;
 }
 
@@ -23,7 +23,7 @@
 
 .navDiv a {
   font-weight: bold;
-  padding: 0.75rem 2.25rem;
+  padding: 12px 20px;
   font-size: 1.4rem;
   border: 0.2rem solid #a8d6e2;
   border-radius: 2rem;
@@ -33,6 +33,9 @@
   font-family: "restoration";
   text-transform: uppercase;
   transition: 0.3s linear;
+}
+.navDiv a:last-child {
+    margin-right: 0;
 }
 .navDiv a:hover {
     background-color: #97adc7;

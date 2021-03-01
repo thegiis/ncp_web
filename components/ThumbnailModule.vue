@@ -5,7 +5,7 @@
     </div>
     <div :class="$style.description">
       <h2>{{title}}</h2>
-      <p>{{text}}</p>
+      <!-- <p>{{text}}</p> -->
     </div>
   </div>
 </template>
@@ -44,6 +44,8 @@ export default {
         return this.$style.module
       }
     }
+  },
+  mounted(){
   }
 }
 </script>
@@ -53,7 +55,7 @@ export default {
   position: relative;
   width: 100%;
   padding: 0;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -94,7 +96,7 @@ export default {
 }
 .description>h2{
   font-family: 'Averia Libre', cursive;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 </style>

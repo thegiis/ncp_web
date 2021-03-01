@@ -7,15 +7,13 @@
           <!-- <img :class="$style.cloud1" src="@/assets/images/landingpage/cloud1.svg" /> -->
           <!-- <img :class="$style.cloud2" src="@/assets/images/landingpage/cloud2.svg" /> -->
 
-          
-          <img :class="[$style.waterBack, $style.water1, $style.MiddleWaves]" src="@/assets/images/landingpage/wave1.svg" />
-          <img :class="[$style.waterBack, $style.water2, $style.DarkWaves]" src="@/assets/images/landingpage/wave2.svg" />
-          <img :class="[$style.waterBack, $style.water3, $style.LightWaves]" src="@/assets/images/landingpage/wave3.svg" />
+          <div :class="[$style.waterBack, $style.water1, $style.MiddleWaves]"></div>
+          <div :class="[$style.waterBack, $style.water2, $style.DarkWaves]"></div>
+          <div :class="[$style.waterBack, $style.water3, $style.LightWaves]"></div>
 
-
-          <img :class="[$style.waterFront, $style.water1, $style.MiddleWaves]" src="@/assets/images/landingpage/wave1.svg" />
-          <img :class="[$style.waterFront, $style.water2, $style.DarkWaves]" src="@/assets/images/landingpage/wave2.svg" />
-          <img :class="[$style.waterFront, $style.water3, $style.LightWaves]" src="@/assets/images/landingpage/wave3.svg" />
+          <div :class="[$style.waterFront, $style.water1, $style.MiddleWaves]"></div>
+          <div :class="[$style.waterFront, $style.water2, $style.DarkWaves]"></div>
+          <div :class="[$style.waterFront, $style.water3, $style.LightWaves]"></div>
     </div>
 </template>
 
@@ -29,6 +27,9 @@
     color: white;
     margin: 0;
     overflow: hidden;
+}
+.landingImage img{
+    max-width: none;
 }
 .title{
     position: absolute;
@@ -82,20 +83,35 @@
 }
 .waterBack{
     position: absolute;
-    height: 60%;
+    width: 108%;
+    height: 59%;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: -3%;
+    opacity: 0.6;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+}
+.waterFront{
+    position: absolute;
+    width: 110%;
+    height: 55%;
     left: 50%;
     transform: translate(-50%,0);
     bottom: -4%;
     opacity: 0.6;
-}
-.waterFront{
-    position: absolute;
-    height: 60%;
-    left: 55%;
-    transform: translate(-50%,0);
-    bottom: -10%;
-    opacity: 0.6;
     z-index: 10;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+}
+.water1{
+    background-image: url('@/assets/images/landingpage/wave1a.svg');
+}
+.water2{
+    background-image: url('@/assets/images/landingpage/wave2a.svg');
+}
+.water3{
+    background-image: url('@/assets/images/landingpage/wave3a.svg');
 }
 
 .LightWaves {

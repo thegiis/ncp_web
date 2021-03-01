@@ -14,7 +14,10 @@ export default {
             },
             { hid: 'description', name: 'description', content: '' }
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+        link: [
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+            { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" }
+        ],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
