@@ -21,6 +21,11 @@
 <script>
 import ThumbnailModule from '@/components/ThumbnailModule.vue'
 
+const { gsap } = require('gsap/dist/gsap')
+const { ScrollTrigger } = require('gsap/dist/ScrollTrigger')
+
+gsap.registerPlugin(ScrollTrigger)
+
 export default {
   name: 'ComingSoon',
   components: {
