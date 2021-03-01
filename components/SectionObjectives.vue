@@ -31,11 +31,11 @@
 <style module>
 .landingInfo {
   width: 100%;
-  padding: 2rem 2rem;
   min-height: 640px;
   background-color: #49e1f0;
   color: white;
   margin: 0;
+  padding: 2rem 2rem;
 }
 .infoContainer {
   display: flex;
@@ -46,7 +46,7 @@
 .objectives {
   font-weight: bold;
   width: 100%;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   font-family: 'restoration';
   margin-bottom: 2rem;
@@ -56,8 +56,7 @@
   max-width: 1080px;
   text-align: center;
   line-height: 2rem;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
+  font-size: 1.2rem;
   color: rgb(30, 77, 99);
 }
 </style>

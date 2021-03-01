@@ -65,7 +65,7 @@ export default {
   background-color: #f8f9fa;
 }
 .aboutSection > section {
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 .aboutTitle {
   font-size: 2.5rem;

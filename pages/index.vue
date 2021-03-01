@@ -39,7 +39,7 @@ export default {
         scrollTrigger: {
           trigger: objectives,
           start: 'top top+=100',
-          end: '70% center',
+          end: '60% center',
           scrub: true,
         },
       })

@@ -67,7 +67,7 @@ export default {
           filename: 'companion.jpg',
           alt: 'companion',
           isRight: false,
-        },
+        }
       ],
     }
   },
@@ -107,5 +107,8 @@ export default {
   max-width: 720px;
   position: relative;
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 </style>
