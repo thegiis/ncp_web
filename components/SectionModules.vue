@@ -1,5 +1,4 @@
 <template>
-<<<<<<< Updated upstream
     <div :class="$style.modulesSection">
       <div :class="$style.modulesContainer">
       <ThumbnailModule v-for="module in modules" :key="module.title" 
@@ -9,7 +8,6 @@
       :isRight="module.isRight"
       :alt="module.alt"/>
       </div>
-=======
   <div class="hero is-fullheight" :class="$style.modulesSection">
     <div
       class="container is-max-desktop"
@@ -26,7 +24,6 @@
         :alt="module.alt"
       />
     </div>
->>>>>>> Stashed changes
   </div>
 </template>
 
@@ -40,41 +37,6 @@ export default {
   },
   data () {
     return {
-<<<<<<< Updated upstream
-      modules: [{
-        'title': 'Pollution',
-        'text': 'something on pollution',
-        'filename': 'pollution.jpg',
-        'alt': 'pollution',
-        "isRight": false,
-      },{
-        'title': 'Pollination',
-        'text': 'something on pollination',
-        'filename': 'pollination.jpg',
-        'alt': 'pollination',
-        "isRight": true,
-      },{
-        'title': 'Food',
-        'text': 'something on food',
-        'filename': 'food.png',
-        'alt': 'food',
-        "isRight": false,
-      },{
-        'title': 'Nature Beauty',
-        'text': 'something on Nature Beauty',
-        'filename': 'hiking.png',
-        'alt': 'nature beauty',
-        "isRight": true,
-      },{
-        'title': 'Human Animal Relation',
-        'text': 'something on Human Animal Relation',
-        'filename': 'hiking.png',
-        'alt': 'nature beauty',
-        "isRight": false,
-      }]
-    }
-  }
-=======
       modules: [
         {
           title: 'Food',
@@ -156,7 +118,6 @@ export default {
       })
     },
   },
->>>>>>> Stashed changes
 }
 </script>
 
