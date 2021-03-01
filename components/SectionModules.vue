@@ -1,4 +1,5 @@
 <template>
+<<<<<<< Updated upstream
     <div :class="$style.modulesSection">
       <div :class="$style.modulesContainer">
       <ThumbnailModule v-for="module in modules" :key="module.title" 
@@ -8,6 +9,8 @@
       :isRight="module.isRight"
       :alt="module.alt"/>
       </div>
+=======
+>>>>>>> Stashed changes
   </div>
 </template>
 
@@ -21,6 +24,7 @@ export default {
   },
   data () {
     return {
+<<<<<<< Updated upstream
       modules: [{
         'title': 'Pollution',
         'text': 'something on pollution',
@@ -54,6 +58,8 @@ export default {
       }]
     }
   }
+=======
+>>>>>>> Stashed changes
 }
 </script>
 

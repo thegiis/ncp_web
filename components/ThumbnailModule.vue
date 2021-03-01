@@ -1,5 +1,4 @@
 <template>
-  <div :class="getClass(isRight)">
     <div :class="$style.thumbnail">
       <img :alt=alt :src="require(`@/assets/images/thumbnails/${filename}`)">
     </div>
