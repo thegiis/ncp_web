@@ -30,7 +30,7 @@
   margin: 0 1rem;
   text-decoration: none;
   color: #6f94c1;
-  font-family: "restoration";
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   transition: 0.3s linear;
 }
