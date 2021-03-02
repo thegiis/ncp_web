@@ -29,6 +29,11 @@ export default {
   },
   mounted() {
     this.startAnimation()
+    //loading
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   },
   methods: {
     startAnimation() {
