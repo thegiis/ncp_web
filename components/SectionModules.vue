@@ -91,25 +91,27 @@ export default {
         },
       })
       modules.forEach(function (module) {
-        console.log(module.childNodes)
+        // console.log(module.childNodes)
         if (module.dataset.right) {
           gsap.set(module.childNodes[2], { opacity: 0, x: '120' })
           tl.from(module.childNodes[0], {
             xPercent: 50,
             left: '-50%',
-          }).to(module.childNodes[2], {
+          })
+          tl.to(module.childNodes[2], {
             opacity: 1,
             x: '0',
-          })
+          }, "+=0.5")
         } else {
           gsap.set(module.childNodes[2], { opacity: 0, x: '-120' })
           tl.from(module.childNodes[0], {
             xPercent: -50,
             left: '50%',
-          }).to(module.childNodes[2], {
+          })
+          tl.to(module.childNodes[2], {
             opacity: 1,
             x: '0',
-          })
+          }, "+=0.5")
         }
       })
     },

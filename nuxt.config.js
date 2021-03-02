@@ -39,5 +39,5 @@ export default {
     build: {},
 
     //loading
-    loading: '~/components/base/BaseLoadingBar.vue'
+    loading: '~/components/base/BaseLoadingBar.vue',
 }
