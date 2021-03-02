@@ -12,10 +12,14 @@ body {
     margin: 0;
 }
 
-@font-face {
+
+/* this font is too large 2.5mb */
+
+
+/* @font-face {
     font-family: "restoration";
     src: url("@/assets/fonts/PS-Restoration-Rough.otf");
-}
+} */
 
 
 /* for poppins and avaeria */
