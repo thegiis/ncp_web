@@ -12,10 +12,11 @@ body {
     margin: 0;
 }
 
-@font-face {
+
+/* @font-face {
     font-family: "restoration";
     src: url("@/assets/fonts/PS-Restoration-Rough.otf");
-}
+} */
 
 
 /* for poppins and avaeria */

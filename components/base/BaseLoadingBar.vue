@@ -1,7 +1,8 @@
 <template>
   <div v-if="loading" class="loading-page">
-    <div class="loading-bg loading-bg-gradient"></div>
-    <div class="loading-bg loading-bg-img"></div>
+    <div></div>
+    <div class="loading-bg loading-bg-solid"></div>
+    <!-- <div class="loading-bg loading-bg-img"></div> -->
     <div class="loading-texts">
       <div class="waviy">
         <span style="--i: 1">L</span>
@@ -20,9 +21,10 @@
 </template>
 
 <script>
+
 export default {
   data: () => ({
-    loading: false,
+    loading: true,
   }),
   methods: {
     start() {
@@ -31,9 +33,9 @@ export default {
       this.loading = true
     },
     finish() {
-        const html = document.querySelector('html')
-        html.style.overflow = 'visible'
-        this.loading = false
+      const html = document.querySelector('html')
+      html.style.overflow = 'visible'
+      this.loading = false
     },
   },
 }
@@ -62,6 +64,9 @@ export default {
 .loading-bg-gradient {
   background: linear-gradient(#ffc875 20%, white 80%);
 }
+.loading-bg-solid {
+  background: #05ffa6;
+}
 .loading-bg-img {
   background-image: url('@/assets/images/hills.svg');
   background-repeat: no-repeat;
@@ -79,7 +84,7 @@ export default {
 }
 .loading-texts {
   position: relative;
-  top: 20%;
+  top: 00%;
   display: flex;
   justify-content: center;
   align-items: center;
