@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import SectionTeam from '@/components/SectionTeam.vue'
+import SectionTeam from '@/components/page_about/SectionTeam.vue'
 export default {
   components: {
     SectionTeam,
