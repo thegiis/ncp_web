@@ -3,6 +3,7 @@
     <div class="baseNavbarDiv" :class="$style.navDiv">
       <nuxt-link :to="{ name: 'index' }">Home</nuxt-link>
       <nuxt-link :to="{ name: 'about' }">About</nuxt-link>
+      <nuxt-link :to="{ name: 'quiz' }">Quiz</nuxt-link>
     </div>
   </div>
 </template>
