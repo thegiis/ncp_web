@@ -1,26 +1,6 @@
 {
   "questions": [
     {
-      "id": "q003",
-      "type": "MCQ",
-      "question": "Why is pollination necessary",
-      "options": [
-        {
-          "option": "For plants to procreate",
-          "isCorrect": true
-        },
-        {
-          "option": "For bees to eat",
-          "isCorrect": ""
-        },
-        {
-          "option": "For people to eat",
-          "isCorrect": ""
-        }
-      ],
-      "difficulty": "1"
-    },
-    {
       "id": "q001",
       "type": "MCQ",
       "question": "Pollination can occur within the same flower.",
@@ -51,6 +31,26 @@
         }
       ],
       "difficulty": 1
+    },
+    {
+      "id": "q003",
+      "type": "MCQ",
+      "question": "Why is pollination necessary",
+      "options": [
+        {
+          "option": "For plants to procreate",
+          "isCorrect": true
+        },
+        {
+          "option": "For bees to eat",
+          "isCorrect": ""
+        },
+        {
+          "option": "For people to eat",
+          "isCorrect": ""
+        }
+      ],
+      "difficulty": "1"
     }
   ]
 }
