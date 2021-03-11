@@ -1,6 +1,21 @@
 {
   "questions": [
     {
+      "id": "q005",
+      "type": "MCQ",
+      "question": "who is Sandeep",
+      "options": [
+        {
+          "option": "software developer",
+          "isCorrect": true
+        },
+        {
+          "option": "engineer"
+        }
+      ],
+      "difficulty": "3"
+    },
+    {
       "id": "q001",
       "type": "MCQ",
       "question": "Pollination can occur within the same flower.",
@@ -14,7 +29,7 @@
           "isCorrect": false
         }
       ],
-      "difficulty": 1
+      "difficulty": ""
     },
     {
       "id": "q002",
