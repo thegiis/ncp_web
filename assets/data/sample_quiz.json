@@ -1,24 +1,6 @@
 {
   "questions": [
     {
-      "id": "q004",
-      "type": "MCQ",
-      "question": "What is question 4?",
-      "difficulty": "5",
-      "options": [
-        {
-          "option": "it is 4",
-          "isCorrect": true
-        },
-        {
-          "option": "it is 2"
-        },
-        {
-          "option": "it is 1"
-        }
-      ]
-    },
-    {
       "id": "q001",
       "type": "MCQ",
       "question": "Pollination can occur within the same flower.",
@@ -69,6 +51,24 @@
         }
       ],
       "difficulty": "1"
+    },
+    {
+      "id": "q004",
+      "type": "MCQ",
+      "question": "What is question 4?",
+      "difficulty": "5",
+      "options": [
+        {
+          "option": "it is 4",
+          "isCorrect": true
+        },
+        {
+          "option": "it is 2"
+        },
+        {
+          "option": "it is 1"
+        }
+      ]
     }
   ]
 }
