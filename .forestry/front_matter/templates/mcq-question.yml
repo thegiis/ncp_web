@@ -25,20 +25,20 @@ fields:
     - type: boolean
       name: isCorrect
       label: isCorrect
-- name: difficulty
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - '1'
-    - '2'
-    - '3'
-    - '4'
-    - '5'
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: difficulty
+  - name: difficulty
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: difficulty
