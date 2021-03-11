@@ -1,0 +1,58 @@
+@import '../../node_modules/gorko/gorko.scss';
+@import 'reset';
+@import 'config';
+
+// Globals start
+body {
+  color: get-color('dark');
+  background: get-color('light');
+
+  @include apply-utility('font', 'base');
+}
+
+/// Default typography
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+  @include apply-utility('font', 'serif');
+}
+
+a {
+  color: currentColor;
+}
+
+p {
+  max-width: 70ch;
+}
+
+svg {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
+
+// Interactive states
+:focus {
+  outline: 1px solid get-color('dark');
+  outline-offset: 0.25rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+// Import utilities
+@import 'utilities/flow';
+@import 'utilities/split-pair';
+@import 'utilities/wrapper';
+@import 'utilities/radius';
+@import 'utilities/text-rtl';
+
+// Import blocks
+@import 'blocks/button-cube';
+
+// Import compositions
+@import 'compositions/hero';
