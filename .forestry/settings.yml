@@ -4,12 +4,16 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: assets/data/sample_quiz.json
+  label: quiz
+  match: "**/*"
 - type: directory
   path: assets/data
   label: Data
   create: documents
   match: "**/*"
-  new_doc_ext: ".json"
+  new_doc_ext: json
 upload_dir: assets
 public_path: "/asset"
 front_matter_path: ''
