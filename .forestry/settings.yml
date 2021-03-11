@@ -7,12 +7,6 @@ sections:
 - type: document
   path: assets/data/sample_quiz.json
   label: quiz
-- type: directory
-  path: assets/data
-  label: Data
-  create: documents
-  match: "**/*"
-  new_doc_ext: json
 upload_dir: assets
 public_path: "/asset"
 front_matter_path: ''
