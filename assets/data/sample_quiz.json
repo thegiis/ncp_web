@@ -59,14 +59,16 @@
       "difficulty": "5",
       "options": [
         {
+          "option": "it is 1",
+          "isCorrect": false
+        },
+        {
+          "option": "it is 2",
+          "isCorrect": false
+        },
+        {
           "option": "it is 4",
           "isCorrect": true
-        },
-        {
-          "option": "it is 2"
-        },
-        {
-          "option": "it is 1"
         }
       ]
     }
