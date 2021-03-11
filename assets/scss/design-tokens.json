@@ -1,7 +1,9 @@
 {
   "colors": {
     "dark": "#121111",
-    "light": "#f8f8f8"
+    "light": "#f8f8f8",
+    "primary": "#121111",
+    "secondary": "#f8f8f8"
   },
   "fonts": {
     "base": "Raleway",
