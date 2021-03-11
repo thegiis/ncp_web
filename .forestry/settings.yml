@@ -9,7 +9,7 @@ sections:
   label: Data
   create: documents
   match: "**/*"
-  new_doc_ext: ".json"
+  new_doc_ext: json
   templates:
   - mcq-question
 - type: document
