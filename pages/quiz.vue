@@ -1,7 +1,7 @@
 <template>
-  <div :class="$style.quizSection">
+  <div :class="$style.quizSection" class="bg-secondary">
     <section class="container is-max-desktop">
-      <h1 :class="$style.quizTitle">Quiz Time</h1>
+      <h1 :class="$style.quizTitle" class="color-primary">Quiz Time</h1>
       <QuestionList :questionList="quizData" />
     </section>
   </div>
@@ -39,14 +39,12 @@ export default {
 .quizSection {
   padding-top: 2rem;
   padding-bottom: 5rem;
-  background-color: #f8f9fa;
 }
 .quizSection > section {
   padding: 2rem;
 }
 .quizTitle {
   font-size: 2.5rem;
-  color: #1e4d63;
   text-align: center;
 }
 </style>
