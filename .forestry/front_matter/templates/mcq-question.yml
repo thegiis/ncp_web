@@ -1,0 +1,30 @@
+---
+label: MCQ question
+hide_body: true
+fields:
+- type: field_group_list
+  name: questions
+  label: questions
+  fields:
+  - type: text
+    name: id
+    label: id
+  - type: text
+    name: type
+    label: type
+  - type: text
+    name: question
+    label: question
+  - type: field_group_list
+    name: options
+    label: options
+    fields:
+    - type: text
+      name: option
+      label: option
+    - type: boolean
+      name: isCorrect
+      label: isCorrect
+  - type: number
+    name: difficulty
+    label: difficulty
