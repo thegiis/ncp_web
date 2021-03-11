@@ -12,9 +12,6 @@ sections:
   new_doc_ext: json
   templates:
   - mcq-question
-- type: document
-  path: assets/data/sample_quiz.json
-  label: quiz
 upload_dir: assets
 public_path: "/asset"
 front_matter_path: ''
