@@ -28,6 +28,9 @@
     margin: 0;
     overflow: hidden;
 }
+.landingImage img{
+    max-width: none;
+}
 .title{
     position: absolute;
     bottom: 59%;

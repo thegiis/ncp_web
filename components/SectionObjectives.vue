@@ -29,13 +29,17 @@
 </template>
 
 <style module>
+
+/* raleway and quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Raleway:wght@500&display=swap');
+
 .landingInfo {
   width: 100%;
-  padding: 2rem 2rem;
   min-height: 640px;
   background-color: #49e1f0;
   color: white;
   margin: 0;
+  padding: 2rem 2rem;
 }
 .infoContainer {
   display: flex;
@@ -46,9 +50,9 @@
 .objectives {
   font-weight: bold;
   width: 100%;
-  font-size: 3rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8125rem;
   text-align: center;
-  font-family: 'restoration';
   margin-bottom: 2rem;
   color: #1e4d63;
 }
@@ -56,8 +60,8 @@
   max-width: 1080px;
   text-align: center;
   line-height: 2rem;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  color: rgb(30, 77, 99);
+  font-size: 1rem;
+  color: #1e4d63;
+  font-family: 'Raleway', sans-serif;
 }
 </style>
