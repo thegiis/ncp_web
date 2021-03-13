@@ -1,0 +1,44 @@
+---
+label: MCQ question
+hide_body: true
+fields:
+- type: field_group_list
+  name: questions
+  label: questions
+  fields:
+  - type: text
+    name: id
+    label: id
+  - type: text
+    name: type
+    label: type
+  - type: text
+    name: question
+    label: question
+  - type: field_group_list
+    name: options
+    label: options
+    fields:
+    - type: text
+      name: option
+      label: option
+    - type: boolean
+      name: isCorrect
+      label: isCorrect
+  - name: difficulty
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: difficulty

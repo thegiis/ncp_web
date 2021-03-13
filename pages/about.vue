@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import SectionTeam from '@/components/SectionTeam.vue'
+import SectionTeam from '@/components/page_about/SectionTeam.vue'
 export default {
   components: {
     SectionTeam,
@@ -54,6 +54,13 @@ export default {
     return {
       title: 'About',
     }
+  },
+  
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   },
 }
 </script>

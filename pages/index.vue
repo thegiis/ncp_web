@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import LandingImage from '@/components/LandingImage.vue'
-import SectionObjectives from '@/components/SectionObjectives.vue'
-import SectionModules from '@/components/SectionModules.vue'
+import LandingImage from '@/components/page_landing/LandingImage.vue'
+import SectionObjectives from '@/components/page_landing/SectionObjectives.vue'
+import SectionModules from '@/components/page_landing/SectionModules.vue'
 
 const { gsap } = require('gsap/dist/gsap')
 const { ScrollTrigger } = require('gsap/dist/ScrollTrigger')
@@ -29,6 +29,11 @@ export default {
   },
   mounted() {
     this.startAnimation()
+    //loading
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   },
   methods: {
     startAnimation() {

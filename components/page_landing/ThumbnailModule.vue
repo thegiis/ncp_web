@@ -1,11 +1,11 @@
 <template>
-  <div :class="getClass(isRight)">
+  <div :class="getClass(isRight)" :data-right="isRight">
     <div :class="$style.thumbnail">
       <img :alt=alt :src="require(`@/assets/images/thumbnails/${filename}`)">
     </div>
     <div :class="$style.description">
       <h2>{{title}}</h2>
-      <!-- <p>{{text}}</p> -->
+      <p>{{text}}</p>
     </div>
   </div>
 </template>
@@ -44,8 +44,6 @@ export default {
         return this.$style.module
       }
     }
-  },
-  mounted(){
   }
 }
 </script>
@@ -55,7 +53,7 @@ export default {
   position: relative;
   width: 100%;
   padding: 0;
-  margin: 0.5rem 0;
+  margin: 0.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -69,6 +67,7 @@ export default {
   overflow: hidden;
   flex: none;
   margin-right: 1.5rem;
+  z-index: 5;
 }
 .right>.thumbnail{
   order: 10;
@@ -95,7 +94,7 @@ export default {
 }
 .description>h2{
   font-family: 'Averia Libre', cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
 }
 </style>

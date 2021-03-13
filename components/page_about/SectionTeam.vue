@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import ItemTeamMember from '@/components/ItemTeamMember.vue'
+import ItemTeamMember from '@/components/page_about/ItemTeamMember.vue'
 
 export default {
   components: {
