@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/np/pollination/page1", (function(a,b){return {data:[{}],fetch:{},mutations:[["lesson\u002FsetGlossary",{"प्रजनन":{en:{word:"Reproduction",meaning:a},np:{word:b,meaning:"सन्तान उत्पादन गर्नु"},image:a}}],["lesson\u002FsetSelectors",[b]]]}}("","प्रजनन")));

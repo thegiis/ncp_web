@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/pollination", {data:[{}],fetch:{},mutations:[]});

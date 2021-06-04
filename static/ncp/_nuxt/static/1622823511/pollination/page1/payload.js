@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/pollination/page1", (function(a,b){return {data:[{}],fetch:{},mutations:[["lesson\u002FsetGlossary",{"reproductive organ":{en:{word:a,meaning:"some meaning"},np:{word:b,meaning:"प्रजनन अङ्ग"},image:b}}],["lesson\u002FsetSelectors",[a]]]}}("reproductive organ","")));
