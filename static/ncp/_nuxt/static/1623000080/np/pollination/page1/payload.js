@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/np/pollination/page1", (function(a,b){return {data:[{}],fetch:{},mutations:[["global\u002FsetSideNavigation",void 0],["lesson\u002FsetVideoId","5a_2T6Mo7-k"],["lesson\u002FsetGlossary",{"प्रजनन":{en:{word:"Reproduction",meaning:a},np:{word:b,meaning:"सन्तान उत्पादन गर्नु"},image:a}}],["lesson\u002FsetSelectors",[b]]]}}("","प्रजनन")));

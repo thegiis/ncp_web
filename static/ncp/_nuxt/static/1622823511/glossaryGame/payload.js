@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/glossaryGame", {data:[{}],fetch:{},mutations:[]});

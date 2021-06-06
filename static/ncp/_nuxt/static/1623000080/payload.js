@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/", (function(a){return {data:[{}],fetch:{},mutations:[["global\u002FsetSideNavigation",a],["global\u002FresetSideNavigation",a]]}}(void 0)));
